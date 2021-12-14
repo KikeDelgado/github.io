@@ -1,0 +1,247 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&family=Rhodium+Libre&display=swap');
+ *{
+     margin: 0px;
+     padding: 0px;
+ }
+header{
+border-bottom: chocolate 2px solid;
+background-color: white;
+}
+
+body{
+    background-image: url("/Imagenes/puertalsol.gif");
+    font-family: 'Rhodium Libre', serif;
+}
+
+.logotipo {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 45%;
+}
+
+.banner{
+      position: relative;
+      left: -11%;
+      height: 200px;
+}
+
+a {
+    background: chocolate;
+    color: black;
+    border: 2px solid black; 
+    padding: 16px 20px;
+    margin: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-radius: 8px; 
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    left: 32.5%;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+a::after {
+    content: "";
+    background: #1F2421;
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: scale(0, 0) rotate(-180deg);
+    transition: all 0.3s ease;
+}
+a:hover::after {
+    transition: all 0.3s ease-out;
+    transform: scale(1, 1) rotate(0deg);
+  }
+
+#reserva {
+    background-color: #DD2C2C;
+}
+
+.imginicio {
+    margin-left: 20px;
+}
+
+footer {
+    border-top: chocolate 2px solid;
+    margin-top: 1em;
+    
+}
+
+i {
+    color: chocolate;
+    font-size: 25px;
+    height: 1em;
+    margin-top: 1em;    
+}
+
+.horario {
+    color: black;
+    font-size: 20px;
+    width: 30em;
+    height: 10em;
+    margin: 1em;
+}
+
+.volver{
+    position: relative;
+    left: 46%;
+}
+
+.h1horario{
+    text-align: center;
+}
+
+.carta {
+    color: chocolate;
+    position: relative;
+    text-align: center;
+}
+
+h2{
+    color: chocolate;
+    position: relative;
+    text-align: center;
+}
+
+.comida{
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Gilda Display', serif;
+}
+
+.fotocarta{
+    height: 200px;
+    width: 300px;
+    align-items: center;
+}
+
+.precio{
+    color: #474748;    
+}
+
+.chicote{
+    position: relative;
+    left: 28.5%;
+}
+
+.cocineros_texto{
+   text-align: center;
+   font-size: 25px;
+   color: rgb(87, 87, 87);
+   font-family: 'Rhodium Libre', serif;
+}
+
+.cocineros_texto h1{
+    color: chocolate;
+}
+
+.olmedo{
+    position: relative;
+    left: 26%;
+}
+
+.mesa{
+    color:black;
+    position: relative;
+    left: 29%;
+}
+
+.icon-res{
+    width: 50%;
+    position: relative;
+    left: 27%;
+}
+
+.icon-res i{
+    font-size: 100px;
+    margin: 1em;
+    color: black;
+}
+
+ .info{
+     color: rgb(87, 87, 87);
+     font-size: large;
+     font-style: oblique;
+ }
+ 
+ .mapa{
+     position: relative;
+     left: 30%;
+ }
+
+ .zona{
+     text-align: center;
+     color: chocolate;
+ }
+
+ .fas fa-bus {
+     text-align: center;
+ }
+
+ @media (max-width: 576px) {
+      a {
+          display: flex;
+          justify-content: left;
+          margin-left:0%;
+      }
+
+      .volver {
+          display: none;
+      }
+
+      .imginicio{
+          width: 400px;
+          height: 200px;
+          display: flex;
+          justify-content:center;
+          margin: 1em;
+          position: relative;
+          left: 22%;
+      }
+
+      header{
+          display: none;
+      }
+     }
+
+     @media (max-width: 768px ) {
+        a {
+            display: flex;
+            justify-content: left;
+            margin-left:0%;
+        }
+  
+        .volver {
+            display: none;
+        }
+  
+        .imginicio{
+            width: 400px;
+            height: 200px;
+            display: flex;
+            justify-content:center;
+            margin: 1em;
+            position: relative;
+            left: 22%;
+        }
+  
+        header{
+            display: none;
+        }
+       }
