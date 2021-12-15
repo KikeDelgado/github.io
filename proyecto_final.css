@@ -10,7 +10,7 @@ background-color: white;
 }
 
 body{
-    background-image: url("/Imagenes/puertalsol.gif");
+    background-image: url("Imagenes/puertalsol.gif" );
     font-family: 'Rhodium Libre', serif;
 }
 
